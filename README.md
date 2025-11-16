@@ -1,3 +1,27 @@
+# React Store App (Customer + Staff)
+
+
+## Overview
+- React frontend (Tailwind CSS, React Router).
+- Express backend (Node.js) with PostgreSQL.
+- Role-based login: Customer or Staff.
+- Public continue-as-guest flow for customers.
+- Store page with product listing and cart.
+- Staff management page with product CRUD, sales history and a Thailand provinces heatmap (requires GeoJSON).
+
+
+## Quick start
+1. Create two folders: `client` and `server`.
+2. In `server` create `.env` with `DATABASE_URL`, `JWT_SECRET`, `PORT`.
+3. `npm install` in both folders (packages are listed below).
+4. Run PostgreSQL and apply `server/db/schema.sql`.
+5. Start server: `npm run dev` (uses nodemon). Start client: `npm start`.
+
+
+## Notes
+- GeoJSON for Thailand provinces is required for the heatmap in management. Put it in `client/public/th_provinces.geojson`.
+- For production, add HTTPS, proper CORS config and stronger auth.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
